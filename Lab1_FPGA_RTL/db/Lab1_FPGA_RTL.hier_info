@@ -25,11 +25,22 @@ fpga_clk_50 => counter[21].CLK
 fpga_clk_50 => counter[22].CLK
 fpga_clk_50 => counter[23].CLK
 fpga_clk_50 => counter[24].CLK
-fpga_led_pio[0] <= blink.DB_MAX_OUTPUT_PORT_TYPE
-fpga_led_pio[1] <= blink.DB_MAX_OUTPUT_PORT_TYPE
-fpga_led_pio[2] <= blink.DB_MAX_OUTPUT_PORT_TYPE
-fpga_led_pio[3] <= blink.DB_MAX_OUTPUT_PORT_TYPE
-fpga_led_pio[4] <= blink.DB_MAX_OUTPUT_PORT_TYPE
-fpga_led_pio[5] <= blink.DB_MAX_OUTPUT_PORT_TYPE
+button => current_state.CLK
+sw[0] => Add0.IN4
+sw[0] => current_multiplier.DATAA
+sw[0] => Add0.IN3
+sw[0] => current_multiplier.DATAA
+sw[1] => current_multiplier.OUTPUTSELECT
+sw[1] => current_multiplier.OUTPUTSELECT
+sw[1] => current_multiplier.OUTPUTSELECT
+sw[2] => current_multiplier[2].OUTPUTSELECT
+sw[2] => current_multiplier[1].OUTPUTSELECT
+sw[2] => current_multiplier[0].OUTPUTSELECT
+fpga_led_pio[0] << blink.DB_MAX_OUTPUT_PORT_TYPE
+fpga_led_pio[1] << blink.DB_MAX_OUTPUT_PORT_TYPE
+fpga_led_pio[2] << blink.DB_MAX_OUTPUT_PORT_TYPE
+fpga_led_pio[3] << blink.DB_MAX_OUTPUT_PORT_TYPE
+fpga_led_pio[4] << blink.DB_MAX_OUTPUT_PORT_TYPE
+fpga_led_pio[5] << blink.DB_MAX_OUTPUT_PORT_TYPE
 
 
