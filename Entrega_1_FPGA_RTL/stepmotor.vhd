@@ -30,26 +30,43 @@ architecture rtl of stepmotor is
    signal enable : std_logic  := '0';
    signal topCounter : integer range 0 to 50000000;
   
-begin	
-	process(clk)
-	begin
+begin
+
+	PROCESS(clk)
+	BEGIN
 	 if (rising_edge(clk)) then
 		CASE state IS
 		WHEN s0=>
-		  if (enable = '1') then
-			 state <= s1;
+			if (enable = '1') then
+				if (dir = '1') then
+					state <= s3;
+				else
+					state <= s1;
+				end if;
 		  end if;
 		WHEN s1=>
 		  if (enable = '1') then
-			 state <= s2;
+				if (dir = '1') then
+					state <= s0;
+				else
+					state <= s2;
+				end if;
 		  end if;
 		WHEN s2=>
 		  if (enable = '1') then
-			 state <= s3;
+				if (dir = '1') then
+					state <= s1;
+				else
+					state <= s3;
+				end if;
 		  end if;
 		WHEN s3=>
 		  if (enable = '1') then
-			 state <= s0;
+				if (dir = '1') then
+					state <= s2;
+				else
+					state <= s0;
+				end if;
 		  end if;
 		when others=>
 		  state <= s0;
@@ -58,34 +75,34 @@ begin
 	end process;
 
 	PROCESS (state)
-	BEGIN
-		CASE state IS
-		  WHEN s0 =>
-			 phases <= "0001";
-		  WHEN s1 =>
-			 phases <= "0010";
-		  WHEN s2 =>
-			 phases <= "0100";
-		  when s3 =>
-			 phases <= "1000";
-		  when others =>
-			 phases <= "0000";
-		END CASE;
-	END PROCESS;
-
+   BEGIN
+      CASE state IS
+        WHEN s0 =>
+          phases <= "0001";
+        WHEN s1 =>
+          phases <= "0010";
+        WHEN s2 =>
+          phases <= "0100";
+        when s3 =>
+          phases <= "1000";
+        when others =>
+          phases <= "0000";
+      END CASE;
+   END PROCESS;
+	
 	PROCESS (vel)
 	BEGIN
 		CASE vel IS
-		  WHEN "00" =>
-			 topCounter <= 100000;
-		  WHEN "01" =>
-			 topCounter <= 750000;
-		  WHEN "10" =>
-			 topCounter <= 500000;
 		  WHEN "11" =>
-			 topCounter <= 250000;
+			 topCounter <= 100000;
+		  WHEN "10" =>
+			 topCounter <= 300000;
+		  WHEN "01" =>
+			 topCounter <= 400000;
+		  WHEN "00" =>
+			 topCounter <= 500000;
 		  when others =>
-			 topCounter <= 10000000;
+			 topCounter <= 10000;
 		END CASE;
 	END PROCESS;
 
