@@ -1,5 +1,5 @@
 Fitter report for Entrega_1
-Wed Aug 25 15:00:41 2021
+Wed Aug 25 15:47:17 2021
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Standard Edition
 
 
@@ -64,7 +64,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                    ;
 +---------------------------------+-------------------------------------------------+
-; Fitter Status                   ; Successful - Wed Aug 25 15:00:41 2021           ;
+; Fitter Status                   ; Successful - Wed Aug 25 15:47:17 2021           ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Standard Edition ;
 ; Revision Name                   ; Entrega_1                                       ;
 ; Top-level Entity Name           ; toplevel                                        ;
@@ -73,7 +73,7 @@ https://fpgasoftware.intel.com/eula.
 ; Timing Models                   ; Final                                           ;
 ; Logic utilization (in ALMs)     ; 27 / 41,910 ( < 1 % )                           ;
 ; Total registers                 ; 31                                              ;
-; Total pins                      ; 9 / 499 ( 2 % )                                 ;
+; Total pins                      ; 11 / 499 ( 2 % )                                ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                           ;
 ; Total RAM Blocks                ; 0 / 553 ( 0 % )                                 ;
@@ -182,19 +182,19 @@ https://fpgasoftware.intel.com/eula.
 +----------+----------------+--------------+-----------------+---------------+----------------+
 
 
-+-------------------------------------------------------------------------------------------------+
-; Incremental Compilation Preservation Summary                                                    ;
-+---------------------+-------------------+----------------------------+--------------------------+
-; Type                ; Total [A + B]     ; From Design Partitions [A] ; From Rapid Recompile [B] ;
-+---------------------+-------------------+----------------------------+--------------------------+
-; Placement (by node) ;                   ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 99 ) ; 0.00 % ( 0 / 99 )          ; 0.00 % ( 0 / 99 )        ;
-;     -- Achieved     ; 0.00 % ( 0 / 99 ) ; 0.00 % ( 0 / 99 )          ; 0.00 % ( 0 / 99 )        ;
-;                     ;                   ;                            ;                          ;
-; Routing (by net)    ;                   ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
-;     -- Achieved     ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
-+---------------------+-------------------+----------------------------+--------------------------+
++--------------------------------------------------------------------------------------------------+
+; Incremental Compilation Preservation Summary                                                     ;
++---------------------+--------------------+----------------------------+--------------------------+
+; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
++---------------------+--------------------+----------------------------+--------------------------+
+; Placement (by node) ;                    ;                            ;                          ;
+;     -- Requested    ; 0.00 % ( 0 / 103 ) ; 0.00 % ( 0 / 103 )         ; 0.00 % ( 0 / 103 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 103 ) ; 0.00 % ( 0 / 103 )         ; 0.00 % ( 0 / 103 )       ;
+;                     ;                    ;                            ;                          ;
+; Routing (by net)    ;                    ;                            ;                          ;
+;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
+;     -- Achieved     ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
++---------------------+--------------------+----------------------------+--------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -212,7 +212,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 99 )     ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 103 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -230,12 +230,12 @@ The pin-out file can be found in /home/victor/Documents/embarcados-avancados/Ent
 +-------------------------------------------------------------+--------------------+-------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 27 / 41,910        ; < 1 % ;
 ; ALMs needed [=A-B+C]                                        ; 27                 ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 30 / 41,910        ; < 1 % ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 31 / 41,910        ; < 1 % ;
 ;         [a] ALMs used for LUT logic and registers           ; 15                 ;       ;
-;         [b] ALMs used for LUT logic                         ; 14                 ;       ;
+;         [b] ALMs used for LUT logic                         ; 15                 ;       ;
 ;         [c] ALMs used for registers                         ; 1                  ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 3 / 41,910         ; < 1 % ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 4 / 41,910         ; < 1 % ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 41,910         ; 0 %   ;
 ;         [a] Due to location constrained logic               ; 0                  ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                  ;       ;
@@ -254,7 +254,7 @@ The pin-out file can be found in /home/victor/Documents/embarcados-avancados/Ent
 ;     -- 5 input functions                                    ; 8                  ;       ;
 ;     -- 4 input functions                                    ; 7                  ;       ;
 ;     -- <=3 input functions                                  ; 29                 ;       ;
-; Combinational ALUT usage for route-throughs                 ; 0                  ;       ;
+; Combinational ALUT usage for route-throughs                 ; 1                  ;       ;
 ;                                                             ;                    ;       ;
 ; Dedicated logic registers                                   ; 31                 ;       ;
 ;     -- By type:                                             ;                    ;       ;
@@ -265,8 +265,8 @@ The pin-out file can be found in /home/victor/Documents/embarcados-avancados/Ent
 ;         -- Routing optimization registers                   ; 0                  ;       ;
 ;                                                             ;                    ;       ;
 ; Virtual pins                                                ; 0                  ;       ;
-; I/O pins                                                    ; 9 / 499            ; 2 %   ;
-;     -- Clock pins                                           ; 2 / 11             ; 18 %  ;
+; I/O pins                                                    ; 11 / 499           ; 2 %   ;
+;     -- Clock pins                                           ; 3 / 11             ; 27 %  ;
 ;     -- Dedicated input pins                                 ; 0 / 39             ; 0 %   ;
 ;                                                             ;                    ;       ;
 ; Hard processor system peripheral utilization                ;                    ;       ;
@@ -324,11 +324,11 @@ The pin-out file can be found in /home/victor/Documents/embarcados-avancados/Ent
 ; Impedance control blocks                                    ; 0 / 4              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.2% / 0.1% / 0.5% ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.2% / 0.2% / 0.3% ;       ;
 ; Maximum fan-out                                             ; 31                 ;       ;
 ; Highest non-global fan-out                                  ; 27                 ;       ;
-; Total fan-out                                               ; 283                ;       ;
-; Average fan-out                                             ; 2.86               ;       ;
+; Total fan-out                                               ; 286                ;       ;
+; Average fan-out                                             ; 2.75               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -339,12 +339,12 @@ The pin-out file can be found in /home/victor/Documents/embarcados-avancados/Ent
 +-------------------------------------------------------------+----------------------+--------------------------------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 27 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
 ; ALMs needed [=A-B+C]                                        ; 27                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 30 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 31 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
 ;         [a] ALMs used for LUT logic and registers           ; 15                   ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 14                   ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 15                   ; 0                              ;
 ;         [c] ALMs used for registers                         ; 1                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                    ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 3 / 41910 ( < 1 % )  ; 0 / 41910 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 4 / 41910 ( < 1 % )  ; 0 / 41910 ( 0 % )              ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 41910 ( 0 % )    ; 0 / 41910 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                    ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                    ; 0                              ;
@@ -363,7 +363,7 @@ The pin-out file can be found in /home/victor/Documents/embarcados-avancados/Ent
 ;     -- 5 input functions                                    ; 8                    ; 0                              ;
 ;     -- 4 input functions                                    ; 7                    ; 0                              ;
 ;     -- <=3 input functions                                  ; 29                   ; 0                              ;
-; Combinational ALUT usage for route-throughs                 ; 0                    ; 0                              ;
+; Combinational ALUT usage for route-throughs                 ; 1                    ; 0                              ;
 ; Memory ALUT usage                                           ; 0                    ; 0                              ;
 ;     -- 64-address deep                                      ; 0                    ; 0                              ;
 ;     -- 32-address deep                                      ; 0                    ; 0                              ;
@@ -378,7 +378,7 @@ The pin-out file can be found in /home/victor/Documents/embarcados-avancados/Ent
 ;                                                             ;                      ;                                ;
 ;                                                             ;                      ;                                ;
 ; Virtual pins                                                ; 0                    ; 0                              ;
-; I/O pins                                                    ; 9                    ; 0                              ;
+; I/O pins                                                    ; 11                   ; 0                              ;
 ; I/O registers                                               ; 0                    ; 0                              ;
 ; Total block memory bits                                     ; 0                    ; 0                              ;
 ; Total block memory implementation bits                      ; 0                    ; 0                              ;
@@ -391,7 +391,7 @@ The pin-out file can be found in /home/victor/Documents/embarcados-avancados/Ent
 ;     -- Registered Output Connections                        ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Internal Connections                                        ;                      ;                                ;
-;     -- Total Connections                                    ; 283                  ; 0                              ;
+;     -- Total Connections                                    ; 286                  ; 0                              ;
 ;     -- Registered Connections                               ; 107                  ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; External Connections                                        ;                      ;                                ;
@@ -399,7 +399,7 @@ The pin-out file can be found in /home/victor/Documents/embarcados-avancados/Ent
 ;     -- hard_block:auto_generated_inst                       ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Partition Interface                                         ;                      ;                                ;
-;     -- Input Ports                                          ; 5                    ; 0                              ;
+;     -- Input Ports                                          ; 7                    ; 0                              ;
 ;     -- Output Ports                                         ; 4                    ; 0                              ;
 ;     -- Bidir Ports                                          ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
@@ -419,17 +419,19 @@ The pin-out file can be found in /home/victor/Documents/embarcados-avancados/Ent
 +-------------------------------------------------------------+----------------------+--------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Input Pins                                                                                                                                                                                                                                                                                      ;
-+------------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
-; Name             ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
-+------------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
-; fpga_clk_50      ; Y26   ; 5B       ; 89           ; 25           ; 3            ; 31                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; stepmotor_dir    ; Y27   ; 5B       ; 89           ; 25           ; 20           ; 4                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; stepmotor_en     ; AB30  ; 5B       ; 89           ; 21           ; 3            ; 27                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; stepmotor_vel[0] ; AB28  ; 5B       ; 89           ; 21           ; 37           ; 4                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; stepmotor_vel[1] ; AC30  ; 5B       ; 89           ; 25           ; 54           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-+------------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                                                                                                                                                                                        ;
++--------------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
+; Name               ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
++--------------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
+; fpga_clk_50        ; Y26   ; 5B       ; 89           ; 25           ; 3            ; 31                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; stepmotor_dir      ; Y27   ; 5B       ; 89           ; 25           ; 20           ; 4                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; stepmotor_en       ; AB30  ; 5B       ; 89           ; 21           ; 3            ; 27                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; stepmotor_steps[0] ; AA26  ; 5B       ; 89           ; 23           ; 3            ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; stepmotor_steps[1] ; AC25  ; 5A       ; 89           ; 4            ; 60           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; stepmotor_vel[0]   ; AB28  ; 5B       ; 89           ; 21           ; 37           ; 4                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; stepmotor_vel[1]   ; AC30  ; 5B       ; 89           ; 25           ; 54           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
++--------------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -455,8 +457,8 @@ The pin-out file can be found in /home/victor/Documents/embarcados-avancados/Ent
 ; 3A       ; 0 / 32 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
 ; 3B       ; 4 / 48 ( 8 % )  ; 2.5V          ; --           ; 2.5V          ;
 ; 4A       ; 0 / 80 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
-; 5A       ; 0 / 32 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
-; 5B       ; 5 / 16 ( 31 % ) ; 2.5V          ; --           ; 2.5V          ;
+; 5A       ; 1 / 32 ( 3 % )  ; 2.5V          ; --           ; 2.5V          ;
+; 5B       ; 6 / 16 ( 38 % ) ; 2.5V          ; --           ; 2.5V          ;
 ; 6B       ; 0 / 44 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
 ; 6A       ; 0 / 56 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
 ; 7A       ; 0 / 19 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
@@ -525,7 +527,7 @@ The pin-out file can be found in /home/victor/Documents/embarcados-avancados/Ent
 ; AA23     ;            ; --             ; VCCPGM                          ; power  ;              ; 1.8V/2.5V/3.0V/3.3V ; --           ;                 ; --       ; --           ;
 ; AA24     ; 228        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AA25     ; 224        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; AA26     ; 252        ; 5B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; AA26     ; 252        ; 5B             ; stepmotor_steps[0]              ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; AA27     ;            ; 5B             ; VCCIO5B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; AA28     ; 251        ; 5B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AA29     ;            ; 5B             ; VREFB5BN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -584,7 +586,7 @@ The pin-out file can be found in /home/victor/Documents/embarcados-avancados/Ent
 ; AC22     ; 207        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AC23     ; 205        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AC24     ;            ; 5A             ; VREFB5AN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
-; AC25     ; 215        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; AC25     ; 215        ; 5A             ; stepmotor_steps[1]              ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; AC26     ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AC27     ; 242        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AC28     ; 245        ; 5B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
@@ -1372,21 +1374,25 @@ The pin-out file can be found in /home/victor/Documents/embarcados-avancados/Ent
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
 
 
-+--------------------------------------------------+
-; I/O Assignment Warnings                          ;
-+------------------+-------------------------------+
-; Pin Name         ; Reason                        ;
-+------------------+-------------------------------+
-; stepmotor_pio[0] ; Incomplete set of assignments ;
-; stepmotor_pio[1] ; Incomplete set of assignments ;
-; stepmotor_pio[2] ; Incomplete set of assignments ;
-; stepmotor_pio[3] ; Incomplete set of assignments ;
-; stepmotor_dir    ; Incomplete set of assignments ;
-; fpga_clk_50      ; Incomplete set of assignments ;
-; stepmotor_vel[1] ; Incomplete set of assignments ;
-; stepmotor_vel[0] ; Incomplete set of assignments ;
-; stepmotor_en     ; Incomplete set of assignments ;
-+------------------+-------------------------------+
++----------------------------------------------------+
+; I/O Assignment Warnings                            ;
++--------------------+-------------------------------+
+; Pin Name           ; Reason                        ;
++--------------------+-------------------------------+
+; stepmotor_steps[0] ; Incomplete set of assignments ;
+; stepmotor_steps[1] ; Incomplete set of assignments ;
+; stepmotor_pio[0]   ; Incomplete set of assignments ;
+; stepmotor_pio[1]   ; Incomplete set of assignments ;
+; stepmotor_pio[2]   ; Incomplete set of assignments ;
+; stepmotor_pio[3]   ; Incomplete set of assignments ;
+; stepmotor_dir      ; Incomplete set of assignments ;
+; fpga_clk_50        ; Incomplete set of assignments ;
+; stepmotor_vel[1]   ; Incomplete set of assignments ;
+; stepmotor_vel[0]   ; Incomplete set of assignments ;
+; stepmotor_en       ; Incomplete set of assignments ;
+; stepmotor_steps[0] ; Missing location assignment   ;
+; stepmotor_steps[1] ; Missing location assignment   ;
++--------------------+-------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1394,27 +1400,29 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name    ; Entity Name ; Library Name ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------+-------------+--------------+
-; |toplevel                  ; 27.0 (0.5)           ; 29.5 (0.5)                       ; 2.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 49 (1)              ; 31 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 9    ; 0            ; |toplevel              ; toplevel    ; work         ;
-;    |stepmotor:u1|          ; 26.5 (26.5)          ; 29.0 (29.0)                      ; 2.5 (2.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 48 (48)             ; 31 (31)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |toplevel|stepmotor:u1 ; stepmotor   ; work         ;
+; |toplevel                  ; 27.0 (0.5)           ; 30.0 (0.5)                       ; 3.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 49 (1)              ; 31 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 11   ; 0            ; |toplevel              ; toplevel    ; work         ;
+;    |stepmotor:u1|          ; 26.5 (26.5)          ; 29.5 (29.5)                      ; 3.0 (3.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 48 (48)             ; 31 (31)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |toplevel|stepmotor:u1 ; stepmotor   ; work         ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------+
-; Delay Chain Summary                                                                                                             ;
-+------------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
-; Name             ; Pin Type ; D1 ; D3_0 ; D3_1 ; D4 ; D5   ; D5 OE ; D5 OCT ; T11 (Postamble Gating) ; T11 (Postamble Ungating) ;
-+------------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
-; stepmotor_pio[0] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; stepmotor_pio[1] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; stepmotor_pio[2] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; stepmotor_pio[3] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; stepmotor_dir    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; fpga_clk_50      ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; stepmotor_vel[1] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; stepmotor_vel[0] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; stepmotor_en     ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-+------------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Delay Chain Summary                                                                                                               ;
++--------------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
+; Name               ; Pin Type ; D1 ; D3_0 ; D3_1 ; D4 ; D5   ; D5 OE ; D5 OCT ; T11 (Postamble Gating) ; T11 (Postamble Ungating) ;
++--------------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
+; stepmotor_steps[0] ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; stepmotor_steps[1] ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; stepmotor_pio[0]   ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; stepmotor_pio[1]   ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; stepmotor_pio[2]   ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; stepmotor_pio[3]   ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; stepmotor_dir      ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; fpga_clk_50        ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; stepmotor_vel[1]   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; stepmotor_vel[0]   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; stepmotor_en       ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
++--------------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
 
 +----------------------------------------------------------------+
@@ -1422,6 +1430,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------+-------------------+---------+
 ; Source Pin / Fanout              ; Pad To Core Index ; Setting ;
 +----------------------------------+-------------------+---------+
+; stepmotor_steps[0]               ;                   ;         ;
+; stepmotor_steps[1]               ;                   ;         ;
 ; stepmotor_dir                    ;                   ;         ;
 ;      - stepmotor:u1|Selector0~0  ; 0                 ; 0       ;
 ;      - stepmotor:u1|Selector1~0  ; 0                 ; 0       ;
@@ -1436,45 +1446,45 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - stepmotor:u1|LessThan0~7  ; 1                 ; 0       ;
 ;      - stepmotor:u1|LessThan0~10 ; 1                 ; 0       ;
 ; stepmotor_en                     ;                   ;         ;
-;      - stepmotor:u1|counter[18]  ; 0                 ; 0       ;
-;      - stepmotor:u1|counter[0]   ; 0                 ; 0       ;
-;      - stepmotor:u1|counter[1]   ; 0                 ; 0       ;
-;      - stepmotor:u1|counter[2]   ; 0                 ; 0       ;
-;      - stepmotor:u1|counter[3]   ; 0                 ; 0       ;
-;      - stepmotor:u1|counter[4]   ; 0                 ; 0       ;
-;      - stepmotor:u1|counter[13]  ; 0                 ; 0       ;
-;      - stepmotor:u1|counter[12]  ; 0                 ; 0       ;
-;      - stepmotor:u1|counter[11]  ; 0                 ; 0       ;
-;      - stepmotor:u1|counter[10]  ; 0                 ; 0       ;
-;      - stepmotor:u1|counter[9]   ; 0                 ; 0       ;
-;      - stepmotor:u1|counter[8]   ; 0                 ; 0       ;
-;      - stepmotor:u1|counter[7]   ; 0                 ; 0       ;
-;      - stepmotor:u1|counter[6]   ; 0                 ; 0       ;
-;      - stepmotor:u1|counter[5]   ; 0                 ; 0       ;
-;      - stepmotor:u1|counter[14]  ; 0                 ; 0       ;
-;      - stepmotor:u1|counter[17]  ; 0                 ; 0       ;
-;      - stepmotor:u1|counter[16]  ; 0                 ; 0       ;
-;      - stepmotor:u1|counter[15]  ; 0                 ; 0       ;
-;      - stepmotor:u1|counter[19]  ; 0                 ; 0       ;
-;      - stepmotor:u1|counter[20]  ; 0                 ; 0       ;
-;      - stepmotor:u1|counter[21]  ; 0                 ; 0       ;
-;      - stepmotor:u1|counter[22]  ; 0                 ; 0       ;
-;      - stepmotor:u1|counter[23]  ; 0                 ; 0       ;
-;      - stepmotor:u1|counter[24]  ; 0                 ; 0       ;
-;      - stepmotor:u1|counter[25]  ; 0                 ; 0       ;
-;      - stepmotor:u1|enable       ; 0                 ; 0       ;
+;      - stepmotor:u1|counter[18]  ; 1                 ; 0       ;
+;      - stepmotor:u1|counter[0]   ; 1                 ; 0       ;
+;      - stepmotor:u1|counter[1]   ; 1                 ; 0       ;
+;      - stepmotor:u1|counter[2]   ; 1                 ; 0       ;
+;      - stepmotor:u1|counter[3]   ; 1                 ; 0       ;
+;      - stepmotor:u1|counter[4]   ; 1                 ; 0       ;
+;      - stepmotor:u1|counter[13]  ; 1                 ; 0       ;
+;      - stepmotor:u1|counter[12]  ; 1                 ; 0       ;
+;      - stepmotor:u1|counter[11]  ; 1                 ; 0       ;
+;      - stepmotor:u1|counter[10]  ; 1                 ; 0       ;
+;      - stepmotor:u1|counter[9]   ; 1                 ; 0       ;
+;      - stepmotor:u1|counter[8]   ; 1                 ; 0       ;
+;      - stepmotor:u1|counter[7]   ; 1                 ; 0       ;
+;      - stepmotor:u1|counter[6]   ; 1                 ; 0       ;
+;      - stepmotor:u1|counter[5]   ; 1                 ; 0       ;
+;      - stepmotor:u1|counter[14]  ; 1                 ; 0       ;
+;      - stepmotor:u1|counter[17]  ; 1                 ; 0       ;
+;      - stepmotor:u1|counter[16]  ; 1                 ; 0       ;
+;      - stepmotor:u1|counter[15]  ; 1                 ; 0       ;
+;      - stepmotor:u1|counter[19]  ; 1                 ; 0       ;
+;      - stepmotor:u1|counter[20]  ; 1                 ; 0       ;
+;      - stepmotor:u1|counter[21]  ; 1                 ; 0       ;
+;      - stepmotor:u1|counter[22]  ; 1                 ; 0       ;
+;      - stepmotor:u1|counter[23]  ; 1                 ; 0       ;
+;      - stepmotor:u1|counter[24]  ; 1                 ; 0       ;
+;      - stepmotor:u1|counter[25]  ; 1                 ; 0       ;
+;      - stepmotor:u1|enable       ; 1                 ; 0       ;
 +----------------------------------+-------------------+---------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                         ;
-+---------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                      ; Location            ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+---------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; fpga_clk_50               ; PIN_Y26             ; 31      ; Clock        ; yes    ; Global Clock         ; GCLK10           ; --                        ;
-; stepmotor:u1|LessThan0~15 ; LABCELL_X88_Y19_N51 ; 27      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; stepmotor_en              ; PIN_AB30            ; 27      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-+---------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                          ;
++---------------------------+----------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                      ; Location             ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++---------------------------+----------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; fpga_clk_50               ; PIN_Y26              ; 31      ; Clock        ; yes    ; Global Clock         ; GCLK10           ; --                        ;
+; stepmotor:u1|LessThan0~15 ; MLABCELL_X87_Y22_N15 ; 27      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; stepmotor_en              ; PIN_AB30             ; 27      ; Clock enable ; no     ; --                   ; --               ; --                        ;
++---------------------------+----------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------+
@@ -1493,12 +1503,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+------------------------+
 ; Block interconnects                         ; 40 / 289,320 ( < 1 % ) ;
 ; C12 interconnects                           ; 2 / 13,420 ( < 1 % )   ;
-; C2 interconnects                            ; 23 / 119,108 ( < 1 % ) ;
-; C4 interconnects                            ; 9 / 56,300 ( < 1 % )   ;
+; C2 interconnects                            ; 15 / 119,108 ( < 1 % ) ;
+; C4 interconnects                            ; 10 / 56,300 ( < 1 % )  ;
 ; DQS bus muxes                               ; 0 / 25 ( 0 % )         ;
 ; DQS-18 I/O buses                            ; 0 / 25 ( 0 % )         ;
 ; DQS-9 I/O buses                             ; 0 / 25 ( 0 % )         ;
-; Direct links                                ; 11 / 289,320 ( < 1 % ) ;
+; Direct links                                ; 5 / 289,320 ( < 1 % )  ;
 ; Global clocks                               ; 1 / 16 ( 6 % )         ;
 ; HPS SDRAM PLL inputs                        ; 0 / 1 ( 0 % )          ;
 ; HPS SDRAM PLL outputs                       ; 0 / 1 ( 0 % )          ;
@@ -1554,12 +1564,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HPS_INTERFACE_TPIU_TRACE_INPUTs             ; 0 / 2 ( 0 % )          ;
 ; HPS_INTERFACE_TPIU_TRACE_OUTPUTs            ; 0 / 33 ( 0 % )         ;
 ; Horizontal periphery clocks                 ; 0 / 72 ( 0 % )         ;
-; Local interconnects                         ; 37 / 84,580 ( < 1 % )  ;
+; Local interconnects                         ; 39 / 84,580 ( < 1 % )  ;
 ; Quadrant clocks                             ; 0 / 66 ( 0 % )         ;
-; R14 interconnects                           ; 10 / 12,676 ( < 1 % )  ;
-; R14/C12 interconnect drivers                ; 11 / 20,720 ( < 1 % )  ;
-; R3 interconnects                            ; 17 / 130,992 ( < 1 % ) ;
-; R6 interconnects                            ; 11 / 266,960 ( < 1 % ) ;
+; R14 interconnects                           ; 11 / 12,676 ( < 1 % )  ;
+; R14/C12 interconnect drivers                ; 12 / 20,720 ( < 1 % )  ;
+; R3 interconnects                            ; 24 / 130,992 ( < 1 % ) ;
+; R6 interconnects                            ; 12 / 266,960 ( < 1 % ) ;
 ; Spine clocks                                ; 2 / 360 ( < 1 % )      ;
 ; Wire stub REs                               ; 0 / 15,858 ( 0 % )     ;
 +---------------------------------------------+------------------------+
@@ -1615,25 +1625,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------+-----------+-----------------------------------+------------------------------------------------------------------------------------+----------+--------------------------------------------------------------------------+---------------------+-------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; I/O Rules Matrix                                                                                                                                                                                                                                                                                                                                                                                                                     ;
-+--------------------+--------------+-----------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+--------------+
-; Pin/Rules          ; IO_000002    ; IO_000003 ; IO_000001 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000022    ; IO_000021    ; IO_000046    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000047    ; IO_000020    ; IO_000019    ; IO_000018    ; IO_000015    ; IO_000014    ; IO_000013    ; IO_000012    ; IO_000011    ; IO_000010 ; IO_000009 ; IO_000034    ;
-+--------------------+--------------+-----------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+--------------+
-; Total Pass         ; 0            ; 9         ; 9         ; 0            ; 0            ; 9         ; 9         ; 0            ; 0            ; 0            ; 0            ; 0            ; 4            ; 0            ; 0            ; 0            ; 0            ; 0            ; 4            ; 0            ; 0            ; 0            ; 0            ; 4            ; 0            ; 9         ; 9         ; 0            ;
-; Total Unchecked    ; 0            ; 0         ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0            ;
-; Total Inapplicable ; 9            ; 0         ; 0         ; 9            ; 9            ; 0         ; 0         ; 9            ; 9            ; 9            ; 9            ; 9            ; 5            ; 9            ; 9            ; 9            ; 9            ; 9            ; 5            ; 9            ; 9            ; 9            ; 9            ; 5            ; 9            ; 0         ; 0         ; 9            ;
-; Total Fail         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0            ;
-; stepmotor_pio[0]   ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; stepmotor_pio[1]   ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; stepmotor_pio[2]   ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; stepmotor_pio[3]   ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; stepmotor_dir      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; fpga_clk_50        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; stepmotor_vel[1]   ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; stepmotor_vel[0]   ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; stepmotor_en       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-+--------------------+--------------+-----------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; I/O Rules Matrix                                                                                                                                                                                                                                                                                                                                                                                                                              ;
++--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+--------------+
+; Pin/Rules          ; IO_000002    ; IO_000003    ; IO_000001    ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007    ; IO_000008    ; IO_000022    ; IO_000021    ; IO_000046    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000047    ; IO_000020    ; IO_000019    ; IO_000018    ; IO_000015    ; IO_000014    ; IO_000013    ; IO_000012    ; IO_000011    ; IO_000010 ; IO_000009 ; IO_000034    ;
++--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+--------------+
+; Total Pass         ; 0            ; 9            ; 9            ; 0            ; 0            ; 11        ; 9            ; 0            ; 0            ; 0            ; 0            ; 0            ; 4            ; 0            ; 0            ; 0            ; 0            ; 0            ; 4            ; 0            ; 0            ; 0            ; 0            ; 4            ; 0            ; 11        ; 11        ; 0            ;
+; Total Unchecked    ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0            ;
+; Total Inapplicable ; 11           ; 2            ; 2            ; 11           ; 11           ; 0         ; 2            ; 11           ; 11           ; 11           ; 11           ; 11           ; 7            ; 11           ; 11           ; 11           ; 11           ; 11           ; 7            ; 11           ; 11           ; 11           ; 11           ; 7            ; 11           ; 0         ; 0         ; 11           ;
+; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0            ;
+; stepmotor_steps[0] ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; stepmotor_steps[1] ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; stepmotor_pio[0]   ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; stepmotor_pio[1]   ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; stepmotor_pio[2]   ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; stepmotor_pio[3]   ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; stepmotor_dir      ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; fpga_clk_50        ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; stepmotor_vel[1]   ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; stepmotor_vel[0]   ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; stepmotor_en       ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
++--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+--------------+
 
 
 +------------------------------------------------------------------------------------------------+
@@ -1695,10 +1707,10 @@ This will disable optimization of problematic paths and expose them for further 
 +-----------------------+-----------------------+-------------------+
 ; Source Register       ; Destination Register  ; Delay Added in ns ;
 +-----------------------+-----------------------+-------------------+
-; stepmotor:u1|state.s3 ; stepmotor:u1|state.s2 ; 0.322             ;
-; stepmotor:u1|state.s2 ; stepmotor:u1|state.s1 ; 0.303             ;
-; stepmotor:u1|state.s0 ; stepmotor:u1|state.s1 ; 0.283             ;
-; stepmotor:u1|state.s1 ; stepmotor:u1|state.s0 ; 0.269             ;
+; stepmotor:u1|state.s3 ; stepmotor:u1|state.s2 ; 0.324             ;
+; stepmotor:u1|state.s2 ; stepmotor:u1|state.s1 ; 0.298             ;
+; stepmotor:u1|state.s0 ; stepmotor:u1|state.s1 ; 0.285             ;
+; stepmotor:u1|state.s1 ; stepmotor:u1|state.s0 ; 0.270             ;
 +-----------------------+-----------------------+-------------------+
 Note: This table only shows the top 4 path(s) that have the largest delay added for hold.
 
@@ -1713,6 +1725,7 @@ Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
+Critical Warning (169085): No exact pin location assignment(s) for 2 pins of 11 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
 Info (184020): Starting Fitter periphery placement operations
 Info (11191): Automatically promoted 1 clock (1 global)
     Info (11162): fpga_clk_50~inputCLKENA0 with 31 fanout uses global clock CLKCTRL_G10
@@ -1731,13 +1744,13 @@ Info (176235): Finished register packing
 Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "fpga_led_pio[4]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "fpga_led_pio[5]" is assigned to location or region, but does not exist in design
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:11
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:12
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X78_Y11 to location X89_Y22
@@ -1745,19 +1758,19 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.33 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.34 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:24
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:25
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file /home/victor/Documents/embarcados-avancados/Entrega_1_FPGA_RTL/Entrega_1.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 2142 megabytes
-    Info: Processing ended: Wed Aug 25 15:00:41 2021
-    Info: Elapsed time: 00:01:27
-    Info: Total CPU time (on all processors): 00:00:39
+Info: Quartus Prime Fitter was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 2132 megabytes
+    Info: Processing ended: Wed Aug 25 15:47:18 2021
+    Info: Elapsed time: 00:01:30
+    Info: Total CPU time (on all processors): 00:00:43
 
 
 +----------------------------+
