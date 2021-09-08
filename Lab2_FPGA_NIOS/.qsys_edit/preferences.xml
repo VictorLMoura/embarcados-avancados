@@ -10,5 +10,5 @@
  <library expandedCategories="Library,Project" />
  <window width="1848" height="930" x="72" y="27" />
  <generation path="_PROJECT_NAME_/" synthesis="VERILOG" />
- <hdlexample language="VERILOG" />
+ <hdlexample language="VHDL" />
 </preferences>

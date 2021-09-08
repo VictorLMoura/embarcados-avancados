@@ -1,16 +1,16 @@
-Fitter Status : Successful - Wed Aug 25 03:51:21 2021
+Fitter Status : Successful - Wed Sep  8 14:36:05 2021
 Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Standard Edition
 Revision Name : Lab1_FPGA_RTL
-Top-level Entity Name : Lab1_FPGA_RTL
+Top-level Entity Name : LAB1_FPGA_RTL
 Family : Cyclone V
 Device : 5CSXFC6D6F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 143 / 41,910 ( < 1 % )
-Total registers : 27
-Total pins : 11 / 499 ( 2 % )
+Logic utilization (in ALMs) : 679 / 41,910 ( 2 % )
+Total registers : 964
+Total pins : 7 / 499 ( 1 % )
 Total virtual pins : 0
-Total block memory bits : 0 / 5,662,720 ( 0 % )
-Total RAM Blocks : 0 / 553 ( 0 % )
+Total block memory bits : 273,408 / 5,662,720 ( 5 % )
+Total RAM Blocks : 37 / 553 ( 7 % )
 Total DSP Blocks : 0 / 112 ( 0 % )
 Total HSSI RX PCSs : 0 / 9 ( 0 % )
 Total HSSI PMA RX Deserializers : 0 / 9 ( 0 % )
