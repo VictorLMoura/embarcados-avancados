@@ -67,18 +67,21 @@ set_location_assignment PIN_AG25 -to fpga_led_pio[1]
 set_location_assignment PIN_AF25 -to fpga_led_pio[0]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fpga_led_pio[5]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fpga_led_pio[4]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fpga_led_pio[3]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fpga_led_pio[2]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fpga_led_pio[1]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fpga_led_pio[0]
-set_location_assignment PIN_AA15 -to button
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to button
-set_location_assignment PIN_AB30 -to sw[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fpga_led_pio[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fpga_led_pio[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fpga_led_pio[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fpga_led_pio[0]
+set_location_assignment PIN_AB28 -to sw[2]
 set_location_assignment PIN_Y27 -to sw[1]
-set_location_assignment PIN_AB28 -to sw[0]
+set_location_assignment PIN_AB30 -to sw[0]
 set_global_assignment -name QIP_FILE niosLab2/synthesis/niosLab2.qip
 set_global_assignment -name VHDL_FILE Lab1_FPGA_RTL.vhd
 set_global_assignment -name SDC_FILE Lab1_FPGA_RTL.sdc
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_AC30 -to sw[3]
+set_location_assignment PIN_AK3 -to stepmotor_pio[3]
+set_location_assignment PIN_Y16 -to stepmotor_pio[2]
+set_location_assignment PIN_AK2 -to stepmotor_pio[1]
+set_location_assignment PIN_W15 -to stepmotor_pio[0]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
