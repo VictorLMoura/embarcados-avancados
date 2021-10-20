@@ -70,7 +70,7 @@ https://fpgasoftware.intel.com/eula.
 		(text "export" (rect 149 187 334 384)(font "Arial" (color 0 0 0)))
 		(text "sw" (rect 128 203 268 419)(font "Arial" (color 128 0 0)(font_size 9)))
 		(text "export" (rect 149 227 334 464)(font "Arial" (color 0 0 0)))
-		(text " system " (rect 317 248 682 506)(font "Arial" ))
+		(text " niosLab2 " (rect 311 248 682 506)(font "Arial" ))
 		(line (pt 144 32)(pt 208 32)(line_width 1))
 		(line (pt 208 32)(pt 208 248)(line_width 1))
 		(line (pt 144 248)(pt 208 248)(line_width 1))
